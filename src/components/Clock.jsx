@@ -1,10 +1,9 @@
-// import { usePomodoroTime } from "../customHooks/usePomodoroTime";
-
-function Clock() {
+function Clock({ formattedTime }) {
   return (
     <div>
-      <h1>00:00</h1>
+      <h1>{formattedTime}</h1>
     </div>
   );
 }
+
 export default Clock;
