@@ -1,10 +1,9 @@
-import { useOnlineStatus } from "./customHooks/useOnlineStatus.js";
+// import { usePomodoroTime } from "../customHooks/usePomodoroTime";
 
 function Clock() {
   return (
     <div>
       <h1>00:00</h1>
-      {useOnlineStatus}
     </div>
   );
 }
