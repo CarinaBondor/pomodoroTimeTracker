@@ -10,12 +10,13 @@ function ButtonsControl({ onStart, onStop, onReset, isRunning }) {
             >
                 Start
             </Button>
-            <button
+            <Button
+                variant="contained"
                 onClick={onStop}
                 disabled={!isRunning}
             >
                 Pause
-            </button>
+            </Button>
             <button onClick={onReset}>Reset</button>
             <button onClick={() => onStart(600)}>10 min</button>
             <button onClick={() => onStart(900)}>15 min</button>

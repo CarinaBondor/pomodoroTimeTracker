@@ -1,6 +1,6 @@
 # What is this project
 
-A small React + Vite + Typescript Pomodoro timer that counts down from 25 minutes and other time options and provides start/pause/reset buttons.
+A small React + Vite + Typescript + react router Pomodoro timer that counts down from 25 minutes and other time options and provides start/pause/reset buttons.
 
 # To start this project
 
