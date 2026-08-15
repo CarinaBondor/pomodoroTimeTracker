@@ -4,29 +4,21 @@ import ButtonsControl from "./components/ButtonsControl";
 import "./App.css";
 
 function App() {
-  const {
-    formattedTimeLeft,
-    startTimer,
-    stopTimer,
-    resetTimer,
-    isRunning,
-    setOtherOptionTimes,
-  } = usePomodoroTime();
+    const { formattedTimeLeft, startTimer, stopTimer, resetTimer, isRunning } = usePomodoroTime();
 
-  return (
-    <>
-      <section id="center">
-        <Clock formattedTime={formattedTimeLeft} />
-        <ButtonsControl
-          onStart={startTimer}
-          onStop={stopTimer}
-          onReset={resetTimer}
-          isRunning={isRunning}
-          setOtherOptionTimes={setOtherOptionTimes}
-        />
-      </section>
-    </>
-  );
+    return (
+        <>
+            <section id="center">
+                <Clock formattedTime={formattedTimeLeft} />
+                <ButtonsControl
+                    onStart={startTimer}
+                    onStop={stopTimer}
+                    onReset={resetTimer}
+                    isRunning={isRunning}
+                />
+            </section>
+        </>
+    );
 }
 
 export default App;
