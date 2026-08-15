@@ -3,7 +3,7 @@ import Clock from "../components/Clock";
 import ButtonsControl from "../components/ButtonsControl";
 import Container from "@mui/material/Container";
 
-function Home() {
+function Home(): React.ReactElement {
     const { formattedTimeLeft, startTimer, stopTimer, resetTimer, isRunning } = usePomodoroTime();
 
     return (

@@ -1,6 +1,12 @@
 import Button from "@mui/material/Button";
+import { ButtonsControlProps } from "../types";
 
-function ButtonsControl({ onStart, onStop, onReset, isRunning }) {
+function ButtonsControl({
+    onStart,
+    onStop,
+    onReset,
+    isRunning,
+}: ButtonsControlProps): React.ReactElement {
     return (
         <div>
             <Button

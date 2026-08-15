@@ -4,4 +4,9 @@ A small React + Vite + Typescript + react router + material ui Pomodoro timer th
 
 # To start this project
 
+# Next steps for this project
+
+- add husky to automate lint checking and type-checking
+- add breaks and looping functionality for the clock
+
 # Enjoy!

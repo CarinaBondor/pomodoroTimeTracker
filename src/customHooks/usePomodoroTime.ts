@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef, useMemo } from "react";
+import { UsePomodoroTypes } from "../types";
 
-export function usePomodoroTime() {
-    const [timeLeft, setTimeLeft] = useState(1500);
-    const [isRunning, setIsRunning] = useState(false);
-    const intervalRef = useRef(null);
+export function usePomodoroTime(): UsePomodoroTypes {
+    const [timeLeft, setTimeLeft] = useState<number>(1500);
+    const [isRunning, setIsRunning] = useState<boolean>(false);
+    const intervalRef = useRef<number | null>(null);
 
     // use useMemo to format only one time the timeLeft value and not every time the component re-renders
     const formattedTimeLeft = useMemo(() => {
@@ -21,7 +22,7 @@ export function usePomodoroTime() {
     }, []);
 
     //actually start the timer with the set time
-    const startTimer = (startTime = null) => {
+    const startTimer = (startTime: number | null = null) => {
         // If caller provides a numeric startTime, stop any existing timer
         // and set the requested start time (prevents duplicate intervals).
         if (typeof startTime === "number") {

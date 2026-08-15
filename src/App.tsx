@@ -1,25 +1,15 @@
 import "./App.css";
-import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import NavBar from "./components/NavBar";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+function App(): React.ReactElement {
     return (
         <>
-            <header>
-                <nav aria-label="Main navigation">
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-
             <main>
+                <NavBar />
+
                 <Routes>
                     <Route
                         path="/"
