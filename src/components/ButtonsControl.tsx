@@ -12,62 +12,71 @@ function ButtonsControl({
 }: ButtonsControlProps): React.ReactElement {
     return (
         <>
-            <ButtonGroup
-                variant="contained"
-                aria-label="Button group for controlling the Pomodoro timer"
-                sx={{
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
-            >
-                <Button
-                    variant="contained"
-                    onClick={() => onStart()}
-                    disabled={isRunning}
-                >
-                    Start
-                </Button>
-                <Button
-                    variant="contained"
-                    onClick={onStop}
-                    disabled={!isRunning}
-                >
-                    Pause
-                </Button>
-                <Button
-                    variant="contained"
-                    onClick={onReset}
-                >
-                    Reset
-                </Button>
-            </ButtonGroup>
-
             <Grid
                 container
-                spacing={2}
                 sx={{
                     justifyContent: "center",
                     alignItems: "center",
                 }}
+                rowSpacing={3}
+                spacing={2}
             >
-                <Button
-                    variant="outlined"
-                    onClick={() => onStart(600)}
+                <Grid
+                    item
+                    xs={12}
+                    sx={{ display: "flex", justifyContent: "center" }}
                 >
-                    10 min
-                </Button>
-                <Button
-                    variant="outlined"
-                    onClick={() => onStart(900)}
+                    <ButtonGroup
+                        variant="contained"
+                        aria-label="Button group for controlling the Pomodoro timer"
+                    >
+                        <Button
+                            variant="contained"
+                            onClick={() => onStart()}
+                            disabled={isRunning}
+                        >
+                            Start
+                        </Button>
+                        <Button
+                            variant="contained"
+                            onClick={onStop}
+                            disabled={!isRunning}
+                        >
+                            Pause
+                        </Button>
+                        <Button
+                            variant="contained"
+                            onClick={onReset}
+                        >
+                            Reset
+                        </Button>
+                    </ButtonGroup>
+                </Grid>
+
+                <Grid
+                    item
+                    xs={12}
+                    sx={{ display: "flex", justifyContent: "center", gap: 2 }}
                 >
-                    15 min
-                </Button>
-                {/* <Button
+                    <Button
+                        variant="outlined"
+                        onClick={() => onStart(600)}
+                    >
+                        10 min
+                    </Button>
+                    <Button
+                        variant="outlined"
+                        onClick={() => onStart(900)}
+                    >
+                        15 min
+                    </Button>
+                    {/* <Button
                     variant="contained"
                     onClick={() => onStart(300)}
                 >
                     5 min break
                 </Button> */}
+                </Grid>
             </Grid>
         </>
     );

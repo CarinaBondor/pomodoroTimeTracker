@@ -5,7 +5,16 @@ export default function NavBar(): React.ReactElement {
         <>
             <header>
                 <nav aria-label="Main navigation">
-                    <ul>
+                    <ul
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "1rem",
+                            listStyleType: "none",
+                            justifyContent: "center",
+                            padding: 0,
+                        }}
+                    >
                         <li>
                             <Link to="/">Home</Link>
                         </li>
