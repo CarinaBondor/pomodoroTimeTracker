@@ -8,7 +8,7 @@ function Home(): React.ReactElement {
 
     return (
         <>
-            <Container maxWidth="xxl">
+            <Container maxWidth="xl">
                 <section id="center">
                     <Clock formattedTime={formattedTimeLeft} />
                     <ButtonsControl

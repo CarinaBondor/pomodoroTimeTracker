@@ -2,7 +2,7 @@ export type UsePomodoroTypes = {
     timeLeft: number;
     formattedTimeLeft: string;
     isRunning: boolean;
-    startTimer: (startTime?: number) => void;
+    startTimer: (startTime?: number | undefined) => void;
     stopTimer: () => void;
     resetTimer: () => void;
 };

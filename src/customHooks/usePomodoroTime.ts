@@ -4,7 +4,7 @@ import { UsePomodoroTypes } from "../types";
 export function usePomodoroTime(): UsePomodoroTypes {
     const [timeLeft, setTimeLeft] = useState<number>(1500);
     const [isRunning, setIsRunning] = useState<boolean>(false);
-    const intervalRef = useRef<number | null>(null);
+    const intervalRef = useRef<number | undefined>(undefined);
 
     // use useMemo to format only one time the timeLeft value and not every time the component re-renders
     const formattedTimeLeft = useMemo(() => {
@@ -22,7 +22,7 @@ export function usePomodoroTime(): UsePomodoroTypes {
     }, []);
 
     //actually start the timer with the set time
-    const startTimer = (startTime: number | null = null) => {
+    const startTimer = (startTime: number | undefined = undefined): void => {
         // If caller provides a numeric startTime, stop any existing timer
         // and set the requested start time (prevents duplicate intervals).
         if (typeof startTime === "number") {
@@ -39,7 +39,7 @@ export function usePomodoroTime(): UsePomodoroTypes {
             setTimeLeft((prevTimeLeft) => {
                 if (prevTimeLeft <= 0) {
                     clearInterval(intervalRef.current);
-                    intervalRef.current = null;
+                    intervalRef.current = undefined;
                     setIsRunning(false);
                     return 0;
                 }
@@ -52,7 +52,7 @@ export function usePomodoroTime(): UsePomodoroTypes {
     const stopTimer = () => {
         if (intervalRef.current) {
             clearInterval(intervalRef.current);
-            intervalRef.current = null;
+            intervalRef.current = undefined;
         }
         setIsRunning(false);
     };
