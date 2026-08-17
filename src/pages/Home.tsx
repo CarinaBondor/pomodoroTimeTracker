@@ -8,8 +8,11 @@ function Home(): React.ReactElement {
 
     return (
         <>
-            <Container maxWidth="xl">
-                <section id="center">
+            <Container maxWidth="md">
+                <section
+                    id="center"
+                    className="homepage-card"
+                >
                     <Clock formattedTime={formattedTimeLeft} />
                     <ButtonsControl
                         onStart={startTimer}

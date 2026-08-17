@@ -1,8 +1,54 @@
 :root {
-    --primary-warm: #f4a261; /* Warm peach */
-    --secondary-warm: #e76f51; /* Terracotta */
-    --accent-warm: #f4a261; /* Light orange */
-    --bg-light: #fffbf5; /* Off-white cream */
-    --text-dark: #5a4a42; /* Warm dark brown */
-    --border-color: #e8d5c4; /* Soft beige */
+    --color-primary: #f4a261;
+    --color-secondary: #e76f51;
+    --color-bg-default: #fffbf5;
+    --color-bg-paper: #ffffff;
+    --color-text-primary: #5a4a42;
+    --color-text-secondary: #8a7a72;
+}
+
+#root {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+header {
+    left: 0;
+    padding: 1.5rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.clock {
+    font-size: 5rem;
+    margin: 1.5rem 0;
+}
+
+.homepage-card {
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 3rem;
 }

@@ -10,6 +10,7 @@ function Clock({ formattedTime }: ClockProps): React.ReactElement {
                 justifyContent: "center",
                 alignItems: "center",
             }}
+            className="clock"
         >
             <h1>{formattedTime}</h1>
         </Grid>

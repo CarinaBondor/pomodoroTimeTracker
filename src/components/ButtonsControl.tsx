@@ -17,9 +17,11 @@ function ButtonsControl({
                 sx={{
                     justifyContent: "center",
                     alignItems: "center",
+                    display: "block",
                 }}
                 rowSpacing={3}
                 spacing={2}
+                className="buttons-control"
             >
                 <Grid
                     item
@@ -55,8 +57,7 @@ function ButtonsControl({
 
                 <Grid
                     item
-                    xs={12}
-                    sx={{ display: "flex", justifyContent: "center", gap: 2 }}
+                    sx={{ display: "flex", justifyContent: "center", gap: 2, padding: "2rem" }}
                 >
                     <Button
                         variant="outlined"

@@ -3,18 +3,9 @@ import { Link } from "react-router-dom";
 export default function NavBar(): React.ReactElement {
     return (
         <>
-            <header>
+            <header className="header">
                 <nav aria-label="Main navigation">
-                    <ul
-                        style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "1rem",
-                            listStyleType: "none",
-                            justifyContent: "center",
-                            padding: 0,
-                        }}
-                    >
+                    <ul>
                         <li>
                             <Link to="/">Home</Link>
                         </li>
