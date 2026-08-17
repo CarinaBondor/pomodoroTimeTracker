@@ -1,5 +1,6 @@
 import { ClockProps } from "../types";
 import { Grid } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 function Clock({ formattedTime }: ClockProps): React.ReactElement {
     return (
@@ -12,7 +13,9 @@ function Clock({ formattedTime }: ClockProps): React.ReactElement {
             }}
             className="clock"
         >
-            <h1>{formattedTime}</h1>
+            <Typography variant="h1">
+                <b>{formattedTime}</b>
+            </Typography>
         </Grid>
     );
 }

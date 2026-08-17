@@ -29,13 +29,14 @@ function ButtonsControl({
                     sx={{ display: "flex", justifyContent: "center" }}
                 >
                     <ButtonGroup
-                        variant="contained"
+                        variant="outlined"
                         aria-label="Button group for controlling the Pomodoro timer"
                     >
                         <Button
                             variant="contained"
                             onClick={() => onStart()}
                             disabled={isRunning}
+                            color="secondary"
                         >
                             Start
                         </Button>
@@ -43,12 +44,14 @@ function ButtonsControl({
                             variant="contained"
                             onClick={onStop}
                             disabled={!isRunning}
+                            color="secondary"
                         >
                             Pause
                         </Button>
                         <Button
                             variant="contained"
                             onClick={onReset}
+                            color="secondary"
                         >
                             Reset
                         </Button>
@@ -61,12 +64,14 @@ function ButtonsControl({
                 >
                     <Button
                         variant="outlined"
+                        color="secondary"
                         onClick={() => onStart(600)}
                     >
                         10 min
                     </Button>
                     <Button
                         variant="outlined"
+                        color="secondary"
                         onClick={() => onStart(900)}
                     >
                         15 min
