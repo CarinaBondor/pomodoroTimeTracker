@@ -4,6 +4,8 @@ A small React + Vite + Typescript + react router + material ui Pomodoro timer th
 
 # To start this project
 
+npm install and then npm run dev
+
 # Next steps for this project
 
 - add husky to automate lint checking and type-checking
