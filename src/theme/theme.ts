@@ -9,6 +9,9 @@ export const theme = createTheme({
         secondary: {
             main: "#e76f51",
         },
+        tertiary: {
+            main: "#5a4a42",
+        },
         background: {
             default: "#fffbf5",
             paper: "#f0e9e9",
@@ -49,6 +52,17 @@ export const theme = createTheme({
                     "&:hover": {
                         boxShadow: "0 6px 16px rgba(230, 111, 81, 0.3)",
                     },
+                },
+            },
+        },
+        MuiContainer: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: "#f0e9e9",
+                    borderRadius: "1rem",
+                    padding: "3rem",
+                    boxShadow: "0 1rem 2rem rgba(72, 5, 104, 0.2)",
+                    border: "1px solid rgba(255, 255, 255, 0.3)",
                 },
             },
         },

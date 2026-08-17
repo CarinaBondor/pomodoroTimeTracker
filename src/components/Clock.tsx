@@ -13,7 +13,10 @@ function Clock({ formattedTime }: ClockProps): React.ReactElement {
             }}
             className="clock"
         >
-            <Typography variant="h1">
+            <Typography
+                variant="h1"
+                color="tertiary"
+            >
                 <b>{formattedTime}</b>
             </Typography>
         </Grid>

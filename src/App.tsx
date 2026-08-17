@@ -9,9 +9,8 @@ import "@fontsource/merriweather/400.css";
 function App(): React.ReactElement {
     return (
         <>
+            <NavBar />
             <main>
-                <NavBar />
-
                 <Routes>
                     <Route
                         path="/"
