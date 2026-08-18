@@ -6,12 +6,23 @@ import Container from "@mui/material/Container";
 
 export default function About(): React.ReactElement {
     return (
-        <Container maxWidth="md">
+        <Container
+            maxWidth="md"
+            sx={{
+                padding: { xs: 2, sm: 4, md: 6 },
+                display: "flex",
+                flexDirection: "column",
+                gap: ".5rem",
+                alignItems: "flex-start",
+                zIndex: "2",
+            }}
+        >
             <Typography
-                variant="h2"
+                variant="h1"
                 color="tertiary"
                 sx={{
                     paddingBottom: "2rem",
+                    fontSize: { xs: "2rem", sm: "3rem", md: "4rem" },
                 }}
             >
                 About this project

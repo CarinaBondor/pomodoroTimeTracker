@@ -53,6 +53,41 @@ nav li a:hover {
 }
 
 .clock {
-    font-size: 5rem;
     margin: 1.5rem 0;
+}
+
+.clock h1 {
+    font-size: 3rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 5rem;
+    }
+}
+
+.tomato-image {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+
+    animation: bobbingEffect 4s ease-in-out infinite;
+    z-index: 1;
+    width: 100px;
+
+    @media screen and (min-height: 600px) {
+        width: 100px;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+@keyframes bobbingEffect {
+    0% {
+        transform: translate(0px, -6px) rotate(-1.5deg);
+    }
+    50% {
+        transform: translate(15px, 6px) rotate(1.5deg);
+    }
+    100% {
+        transform: translate(0px, -6px) rotate(-1.5deg);
+    }
 }

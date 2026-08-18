@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import { Routes, Route } from "react-router-dom";
 import "@fontsource/cedarville-cursive";
 import "@fontsource/merriweather/400.css";
+import tomato from "/src/assets/tomato.png";
 
 function App(): React.ReactElement {
     return (
@@ -21,6 +22,11 @@ function App(): React.ReactElement {
                         element={<About />}
                     />
                 </Routes>
+                <img
+                    src={tomato}
+                    alt="Logo"
+                    className="tomato-image"
+                />
             </main>
         </>
     );
