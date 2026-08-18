@@ -66,17 +66,15 @@ nav li a:hover {
 
 .tomato-image {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
-
+    bottom: 1rem;
+    margin: 0 auto;
     animation: bobbingEffect 4s ease-in-out infinite;
     z-index: 1;
-    width: 100px;
+    width: 90px;
 
     @media screen and (min-height: 600px) {
         width: 100px;
         bottom: 1rem;
-        right: 1rem;
     }
 }
 
