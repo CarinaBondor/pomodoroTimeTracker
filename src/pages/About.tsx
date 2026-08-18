@@ -50,7 +50,15 @@ export default function About(): React.ReactElement {
             </Typography>
 
             <Typography color="tertiary">
-                Source code here: <Link>Github</Link>
+                Source code here:{" "}
+                <Link
+                    href="https://github.com/CarinaBondor/pomodoroTimeTracker"
+                    alt="Link to the project github"
+                    title="Link to the project github"
+                    target="_blank"
+                >
+                    Github
+                </Link>
             </Typography>
 
             <Typography color="tertiary">Made by Carina B.S.</Typography>
