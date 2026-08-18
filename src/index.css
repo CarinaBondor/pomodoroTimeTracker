@@ -1,4 +1,7 @@
 /* CSS Reset */
+@view-transition {
+    navigation: auto;
+}
 * {
     margin: 0;
     padding: 0;
@@ -55,4 +58,43 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Custom slide-out for the old page */
+::view-transition-old(root) {
+    animation-name: slide-out;
+}
+
+/* Custom slide-in for the new page */
+::view-transition-new(root) {
+    animation-name: slide-in;
+}
+
+/* Define your custom keyframes */
+@keyframes slide-out {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

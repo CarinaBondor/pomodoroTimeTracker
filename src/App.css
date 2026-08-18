@@ -39,11 +39,17 @@ nav ul {
     gap: 2rem;
     justify-content: center;
     color: var(--color-bg-default);
+    font-weight: 600;
+    transition: 0.3s color;
+}
+
+nav li a {
+    transition: 0.3s color;
 }
 
 nav li a:hover {
-    text-decoration: none;
-    color: var(--color-bg-default);
+    color: var(--color-text-primary);
+    transition: 0.3s color;
 }
 
 .clock {

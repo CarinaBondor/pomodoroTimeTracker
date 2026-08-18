@@ -7,10 +7,20 @@ export default function NavBar(): React.ReactElement {
                 <nav aria-label="Main navigation">
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link
+                                to="/"
+                                viewTransition
+                            >
+                                Home
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/about">About</Link>
+                            <Link
+                                to="/about"
+                                viewTransition
+                            >
+                                About
+                            </Link>
                         </li>
                     </ul>
                 </nav>
