@@ -8,20 +8,27 @@
 }
 
 #root {
-    min-height: 100dvh;
     background-color: var(--color-primary);
     font-size: 18px;
+    min-height: 100dvh;
     padding: 2rem;
     position: relative;
 }
 
 main {
-    position: relative;
-    margin: 2.5rem 0 0 0;
-    display: grid;
-    place-items: center;
     align-items: center;
+    display: grid;
+    margin: 2.5rem 0 0 0;
     min-height: 80vh;
+    place-items: center;
+    position: relative;
+}
+
+.routes-container {
+    padding-bottom: 90px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
 }
 
 header {
@@ -33,13 +40,13 @@ header {
 }
 
 nav ul {
-    list-style-type: none;
     align-items: center;
+    color: var(--color-bg-default);
     display: flex;
+    font-weight: 600;
     gap: 2rem;
     justify-content: center;
-    color: var(--color-bg-default);
-    font-weight: 600;
+    list-style-type: none;
     transition: 0.3s color;
 }
 
@@ -65,17 +72,12 @@ nav li a:hover {
 }
 
 .tomato-image {
-    position: fixed;
+    animation: bobbingEffect 3s ease-in-out infinite;
     bottom: 1rem;
     margin: 0 auto;
-    animation: bobbingEffect 4s ease-in-out infinite;
-    z-index: 1;
+    position: fixed;
     width: 90px;
-
-    @media screen and (min-height: 600px) {
-        width: 100px;
-        bottom: 1rem;
-    }
+    z-index: 1;
 }
 
 @keyframes bobbingEffect {

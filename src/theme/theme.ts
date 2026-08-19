@@ -40,6 +40,7 @@ export const theme = createTheme({
                     textTransform: "none",
                     fontWeight: 600,
                     boxShadow: "0 4px 8px rgba(230, 111, 81, 0.2)",
+                    cornerShape: "scoop",
                     "&:hover": {
                         boxShadow: "0 6px 16px rgba(230, 111, 81, 0.3)",
                     },
@@ -49,6 +50,7 @@ export const theme = createTheme({
                     fontSize: "1rem",
                     fontWeight: 600,
                     border: "2px solid #e76f51",
+                    cornerShape: "scoop",
                     "&:hover": {
                         boxShadow: "0 6px 16px rgba(230, 111, 81, 0.3)",
                     },
@@ -63,6 +65,7 @@ export const theme = createTheme({
                     padding: "3rem",
                     boxShadow: "0 1rem 2rem rgba(72, 5, 104, 0.2)",
                     border: "1px solid rgba(255, 255, 255, 0.3)",
+                    cornerShape: "squircle",
                 },
             },
         },

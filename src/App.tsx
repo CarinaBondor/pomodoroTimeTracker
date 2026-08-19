@@ -12,16 +12,18 @@ function App(): React.ReactElement {
         <>
             <NavBar />
             <main>
-                <Routes>
-                    <Route
-                        path="/"
-                        element={<Home />}
-                    />
-                    <Route
-                        path="/about"
-                        element={<About />}
-                    />
-                </Routes>
+                <div className="routes-container">
+                    <Routes>
+                        <Route
+                            path="/"
+                            element={<Home />}
+                        />
+                        <Route
+                            path="/about"
+                            element={<About />}
+                        />
+                    </Routes>
+                </div>
                 <img
                     src={tomato}
                     alt="Logo"

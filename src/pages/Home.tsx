@@ -12,7 +12,6 @@ function Home(): React.ReactElement {
                 maxWidth="md"
                 sx={{
                     padding: { xs: 2, sm: 4, md: 6 },
-                    zIndex: "2",
                 }}
             >
                 <section

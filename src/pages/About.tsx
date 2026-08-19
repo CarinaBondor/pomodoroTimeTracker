@@ -14,7 +14,6 @@ export default function About(): React.ReactElement {
                 flexDirection: "column",
                 gap: ".5rem",
                 alignItems: "flex-start",
-                zIndex: "2",
             }}
         >
             <Typography
